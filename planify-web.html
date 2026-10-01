@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planify Web — UI/UX Case Study | Nur Portfolio</title>
+  <meta name="description" content="Case Study UI/UX dan Web Development: Planify Web, dashboard task management dan visualisasi analitik tugas mahasiswa.">
+  <meta name="author" content="Nur">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Planify Web — UI/UX Case Study">
+  <meta property="og:description" content="Dashboard web task management dengan statistik visual, metrik penyelesaian, dan manajemen deadline tugas kuliah.">
+  <meta property="og:type" content="article">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/case-study.css">
+</head>
+<body>
+
+  <!-- Sticky Back Navigation -->
+  <nav class="cs-nav" aria-label="Navigasi Kembali">
+    <div class="container cs-nav-inner">
+      <a href="index.html#projects" class="cs-back-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Portfolio</span>
+      </a>
+
+      <a href="index.html" class="nav-brand" style="font-size: 1.25rem;">
+        NUR<span class="nav-brand-dot">.</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Case Study Hero -->
+    <header class="cs-hero">
+      <div class="container">
+        <div class="cs-badge">
+          <span class="dot"></span>
+          Case Study // 02
+        </div>
+        <h1 class="cs-title">Planify Web</h1>
+        <p class="cs-subtitle">Web-Based Task Management &amp; Analytics Dashboard</p>
+
+        <!-- Metadata Bar -->
+        <div class="cs-meta-grid">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Category</span>
+            <span class="cs-meta-value">Web Application / UI/UX</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Target Audience</span>
+            <span class="cs-meta-value">Mahasiswa &amp; Pelajar</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Tech Stack</span>
+            <span class="cs-meta-value">PHP, MySQL, Bootstrap, Chart.js</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Source Code</span>
+            <span class="cs-meta-value">
+              <a href="https://github.com/231111069-prog/Planify.git" target="_blank" rel="noopener noreferrer" style="color: var(--c-primary); text-decoration: underline;">
+                GitHub Repository ↗
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 01 — OVERVIEW -->
+    <section class="cs-story-section bg-white">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">01</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Executive Summary</span>
+            <h2 class="cs-story-title">OVERVIEW</h2>
+          </div>
+        </div>
+        <p class="cs-story-paragraph">
+          Planify Web merupakan versi web aplikasi manajemen tugas yang dirancang untuk menghadirkan pengalaman monitoring menyeluruh bagi mahasiswa. Berbeda dengan layar smartphone yang mengutamakan kecepatan pencatatan cepat, Planify Web memanfaatkan ruang layar desktop untuk menyajikan dashboard analitik yang komprehensif, visualisasi grafik donut interaktif, serta alur pengelolaan tugas terpadu dari login hingga penyelesaian tugas.
+        </p>
+      </div>
+    </section>
+
+    <!-- 02 — THE PROBLEM & 04 — THE SOLUTION -->
+    <section class="cs-story-section bg-canvas">
+      <div class="container">
+        <div class="cs-story-cards">
+          <!-- 02 — THE PROBLEM -->
+          <div class="cs-card-item">
+            <span class="cs-card-label">02 // The Problem</span>
+            <h3 class="cs-card-heading">Keterbatasan Visibilitas Tugas di Layar Kecil</h3>
+            <p class="cs-card-text">
+              Mahasiswa sering kali memiliki banyak mata kuliah dengan deadline bersamaan. Ketika hanya mengandalkan catatan ponsel, pengguna kesulitan melihat proporsi beban tugas secara makro, mengevaluasi rasio tugas yang sudah diselesaikan vs yang tertunda, dan menyusun rencana belajar intensif di meja belajar.
+            </p>
+          </div>
+
+          <!-- 04 — THE SOLUTION -->
+          <div class="cs-card-item featured">
+            <span class="cs-card-label">04 // The Solution</span>
+            <h3 class="cs-card-heading">Dashboard Analitik Berbasis Web</h3>
+            <p class="cs-card-text">
+              Merancang aplikasi web produktivitas yang menghadirkan dashboard visual dengan indikator kartu metrik (Total Tugas, Selesai, Belum Selesai, Deadline Hari Ini) serta grafik Donut Chart (Chart.js) interaktif. Informasi disajikan secara terstruktur sehingga mahasiswa dapat menilai progres tugas hanya dalam hitungan detik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 — TARGET USER -->
+    <section class="cs-story-section bg-white">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">03</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Audience Profile</span>
+            <h2 class="cs-story-title">TARGET USER</h2>
+          </div>
+        </div>
+        <p class="cs-story-paragraph" style="margin-bottom: 3rem;">
+          Pengguna utama Planify Web adalah mahasiswa aktif yang menggunakan laptop atau PC sebagai perangkat kerja utama untuk pengerjaan tugas kuliah dan proyek tim.
+        </p>
+
+        <div class="cs-story-cards">
+          <div class="cs-card-item">
+            <span class="cs-card-label">User Persona // 01</span>
+            <h3 class="cs-card-heading">Mahasiswa dengan Beban Tugas Tinggi</h3>
+            <p class="cs-card-text">
+              Membutuhkan gambaran keseluruhan jadwal tugas semesteran saat membuka laptop, mengelompokkan tugas berdasarkan urgensi, dan meminimalkan resiko terlambat mengumpulkan tugas kuliah.
+            </p>
+          </div>
+
+          <div class="cs-card-item">
+            <span class="cs-card-label">User Persona // 02</span>
+            <h3 class="cs-card-heading">Pelajar yang Visual-Oriented</h3>
+            <p class="cs-card-text">
+              Lebih termotivasi ketika melihat data produktivitas dalam format visual grafik dan persentase, sehingga merasa puas ketika porsi "Tugas Selesai" mendominasi diagram.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 — USER FLOW -->
+    <section class="cs-story-section bg-canvas">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">05</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Interaction Architecture</span>
+            <h2 class="cs-story-title">USER FLOW</h2>
+          </div>
+        </div>
+        <p class="cs-story-paragraph">
+          Alur interaksi dirancang efisien dan terarah dari proses autentikasi pengguna hingga penyelesaian tugas akademik:
+        </p>
+
+        <div class="cs-flow-box">
+          <ol class="cs-flow-chain">
+            <!-- 1 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">01</div>
+                <div class="cs-node-title">LOGIN</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&rarr;</span>
+            </li>
+
+            <!-- 2 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">02</div>
+                <div class="cs-node-title">DASHBOARD</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&rarr;</span>
+            </li>
+
+            <!-- 3 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">03</div>
+                <div class="cs-node-title">VIEW TASK STATISTICS</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&rarr;</span>
+            </li>
+
+            <!-- 4 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">04</div>
+                <div class="cs-node-title">ADD TASK</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&rarr;</span>
+            </li>
+
+            <!-- 5 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">05</div>
+                <div class="cs-node-title">MANAGE TASK</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&rarr;</span>
+            </li>
+
+            <!-- 6 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">06</div>
+                <div class="cs-node-title">UPDATE STATUS</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&rarr;</span>
+            </li>
+
+            <!-- 7 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node" style="border-color: var(--c-primary); background: var(--c-primary-tint);">
+                <div class="cs-node-num" style="color: var(--c-primary);">07</div>
+                <div class="cs-node-title" style="color: var(--c-primary);">COMPLETE TASK</div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 — UI DESIGN (SCREENSHOT ASLI) -->
+    <section class="cs-story-section bg-white">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">06</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Visual Interface</span>
+            <h2 class="cs-story-title">UI DESIGN</h2>
+          </div>
+        </div>
+        <p class="cs-story-paragraph">
+          Tampilan antarmuka nyata Planify Web yang diimplementasikan menggunakan Bootstrap 5 dan Chart.js, menyajikan informasi produktivitas dengan hierarki yang bersih dan kontras yang jelas:
+        </p>
+
+        <!-- Real Screenshot in Desktop Browser Frame -->
+        <div class="cs-ui-stage">
+          <div class="cs-browser-frame-large">
+            <div class="device-browser-bar">
+              <div class="device-browser-dots">
+                <span class="browser-dot" style="background:#EF4444;"></span>
+                <span class="browser-dot" style="background:#F59E0B;"></span>
+                <span class="browser-dot" style="background:#10B981;"></span>
+              </div>
+              <div class="device-browser-url">localhost/planify/dashboard.php</div>
+            </div>
+            <img src="assets/planify-web.png" 
+                 alt="Screenshot asli Planify Web Dashboard: Sidebar navigation, ringkasan kartu metrik tugas, greeting user Halo Arifah, dan donat statistik Chart.js" 
+                 loading="lazy">
+          </div>
+          <div class="cs-caption-pill">
+            Screenshot asli antarmuka Dashboard Planify Web
+          </div>
+        </div>
+
+        <!-- 6 Main Interface Components -->
+        <div class="cs-elements-cluster">
+          <div class="cs-element-tile">
+            <div class="cs-element-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </div>
+            <div class="cs-element-text">Sidebar Navigation (Dashboard, Tambah Tugas, Statistik, Setting, Logout)</div>
+          </div>
+
+          <div class="cs-element-tile">
+            <div class="cs-element-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="cs-element-text">Greeting Personal &amp; Profil Pengguna ("Halo, Arifah")</div>
+          </div>
+
+          <div class="cs-element-tile">
+            <div class="cs-element-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <div class="cs-element-text">4 Metric Summary Cards (Total, Selesai, Belum, Deadline)</div>
+          </div>
+
+          <div class="cs-element-tile">
+            <div class="cs-element-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a10 10 0 0 1 10 10"></path>
+              </svg>
+            </div>
+            <div class="cs-element-text">Visual Donut Chart (Chart.js Statistik Distribusi Tugas)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 — UX APPROACH -->
+    <section class="cs-story-section bg-canvas">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">07</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Design Principles</span>
+            <h2 class="cs-story-title">UX APPROACH</h2>
+          </div>
+        </div>
+
+        <div class="cs-story-cards">
+          <div class="cs-card-item">
+            <span class="cs-card-label">UX Pillar // 01</span>
+            <h3 class="cs-card-heading">Cognitive Load Reduction</h3>
+            <p class="cs-card-text">
+              Menghindari dashboard yang penuh informasi tidak penting. Area kerja difokuskan pada angka metrik yang berdampak langsung pada produktivitas hari ini dan visualisasi yang mudah dipindai mata dalam 3 detik.
+            </p>
+          </div>
+
+          <div class="cs-card-item">
+            <span class="cs-card-label">UX Pillar // 02</span>
+            <h3 class="cs-card-heading">Data-Driven Feedback</h3>
+            <p class="cs-card-text">
+              Memberikan kepuasan visual psikologis saat menyelesaikan tugas: status otomatis memperbarui segmen grafik Chart.js dan angka tugas selesai bertambah secara instan.
+            </p>
+          </div>
+
+          <div class="cs-card-item">
+            <span class="cs-card-label">UX Pillar // 03</span>
+            <h3 class="cs-card-heading">Responsive Grid System</h3>
+            <p class="cs-card-text">
+              Dibangun dengan Bootstrap 5 agar tata letak dashboard dapat beradaptasi secara elegan mulai dari monitor ultrawide, laptop standar, hingga layar tablet tanpa memutus alur kerja pengguna.
+            </p>
+          </div>
+
+          <div class="cs-card-item">
+            <span class="cs-card-label">UX Pillar // 04</span>
+            <h3 class="cs-card-heading">Fast Form Interaction</h3>
+            <p class="cs-card-text">
+              Formulir penambahan tugas dibuat ringkas dengan input tanggal deadline terintegrasi dan validasi langsung, memangkas waktu penginputan tugas baru seminimal mungkin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 — TECHNOLOGY -->
+    <section class="cs-story-section bg-white">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">08</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Engineering Architecture</span>
+            <h2 class="cs-story-title">TECHNOLOGY</h2>
+          </div>
+        </div>
+        <p class="cs-story-paragraph" style="margin-bottom: 3rem;">
+          Planify Web dikembangkan menggunakan fondasi full-stack web native yang andal untuk menghasilkan performa tinggi dan pengelolaan basis data yang terstruktur:
+        </p>
+
+        <div class="skills-grid">
+          <!-- PHP -->
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">PHP</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Backend Server Logic</small>
+            </div>
+          </div>
+
+          <!-- MySQL -->
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">MySQL</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Relational Database</small>
+            </div>
+          </div>
+
+          <!-- Bootstrap 5 -->
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">Bootstrap 5</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Responsive UI Framework</small>
+            </div>
+          </div>
+
+          <!-- Chart.js -->
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 20V10"></path>
+                <path d="M12 20V4"></path>
+                <path d="M6 20v-6"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">Chart.js</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Interactive Data Visuals</small>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <path d="M8 16c0 1.5 1 2 2.5 2s2-.8 2-2v-4"></path>
+                <path d="M15 13.5c.8-.5 1.5-.5 2 0s.5 1.5 0 2-1.5 1.5-2 2.5"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">JavaScript</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Client-Side Dynamics</small>
+            </div>
+          </div>
+
+          <!-- HTML5 & CSS3 -->
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 3l1.5 16 6.5 2 6.5-2L20 3H4z"></path>
+                <path d="M8 8h8M8 12h7M9 16l3 1 3-1"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">HTML5 &amp; CSS3</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Semantic &amp; Modern Styling</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- 09 — RESULT -->
+        <div class="cs-result-banner">
+          <div class="cs-result-label">09 // RESULT</div>
+          <p class="cs-result-quote">
+            "Planify Web menghadirkan antarmuka desktop yang komprehensif, menggabungkan pengelolaan tugas yang praktis dengan visualisasi analitik untuk efisiensi belajar mahasiswa."
+          </p>
+        </div>
+
+        <!-- CTA Bar -->
+        <div class="cs-action-banner">
+          <div>
+            <h3 class="cs-action-title">GitHub Repository</h3>
+            <p class="cs-action-subtitle">Kode sumber lengkap aplikasi Planify Web tersedia di GitHub.</p>
+          </div>
+          <a href="https://github.com/231111069-prog/Planify.git" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            VIEW GITHUB REPOSITORY
+            <svg class="arrow-diag" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cross Navigation: Previous & Next Project -->
+    <section class="cs-cross-nav">
+      <div class="container">
+        <div class="cs-cross-nav-dual">
+          <!-- Previous Project: Planify Mobile -->
+          <a href="planify.html" class="cs-cross-card prev">
+            <div>
+              <div class="cs-cross-sub">Previous Case Study // Project 01</div>
+              <h3 class="cs-cross-title">Planify Mobile</h3>
+              <p class="cs-cross-desc">Mobile Task Management Application untuk tracking tugas on-the-go di smartphone.</p>
+            </div>
+            <div class="cs-cross-arrow" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Next Project: Scooter Rental -->
+          <a href="scooter.html" class="cs-cross-card">
+            <div>
+              <div class="cs-cross-sub">Next Case Study // Project 03</div>
+              <h3 class="cs-cross-title">Bingin &amp; Uluwatu</h3>
+              <p class="cs-cross-desc">Tourism &amp; Scooter Rental Website di Bali dengan katalog armada dan sistem reservasi.</p>
+            </div>
+            <div class="cs-cross-arrow" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 Nur &mdash; UI/UX Portfolio</p>
+      <ul class="footer-nav">
+        <li><a href="index.html" class="footer-nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="footer-nav-link">All Projects</a></li>
+        <li>
+          <a href="https://github.com/231111069-prog/Planify.git" target="_blank" rel="noopener noreferrer" class="footer-nav-link">
+            GitHub ↗
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

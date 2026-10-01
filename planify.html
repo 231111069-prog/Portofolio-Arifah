@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planify Mobile — UI/UX Case Study | Nur Portfolio</title>
+  <meta name="description" content="Case Study UI/UX dan Mobile Development: Planify Mobile, aplikasi task management mahasiswa.">
+  <meta name="author" content="Nur">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Planify Mobile — UI/UX Case Study">
+  <meta property="og:description" content="Aplikasi mobile task management yang dirancang untuk membantu mahasiswa mengelola tugas dan deadline.">
+  <meta property="og:type" content="article">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/case-study.css">
+</head>
+<body>
+
+  <!-- Sticky Back Navigation -->
+  <nav class="cs-nav" aria-label="Navigasi Kembali">
+    <div class="container cs-nav-inner">
+      <a href="index.html#projects" class="cs-back-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Back to Portfolio</span>
+      </a>
+
+      <a href="index.html" class="nav-brand" style="font-size: 1.25rem;">
+        NUR<span class="nav-brand-dot">.</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Case Study Hero -->
+    <header class="cs-hero">
+      <div class="container">
+        <div class="cs-badge">
+          <span class="dot"></span>
+          Case Study // 01
+        </div>
+        <h1 class="cs-title">Planify Mobile</h1>
+        <p class="cs-subtitle">Mobile Task Management Application</p>
+
+        <!-- Metadata Bar -->
+        <div class="cs-meta-grid">
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Category</span>
+            <span class="cs-meta-value">Mobile App / UI/UX</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Target Audience</span>
+            <span class="cs-meta-value">Mahasiswa</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Tech Stack</span>
+            <span class="cs-meta-value">React Native, Expo, SQL</span>
+          </div>
+          <div class="cs-meta-item">
+            <span class="cs-meta-label">Source Code</span>
+            <span class="cs-meta-value">
+              <a href="https://github.com/231111069-prog/planify-mobile" target="_blank" rel="noopener noreferrer" style="color: var(--c-primary); text-decoration: underline;">
+                GitHub Repository ↗
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Overview Statement -->
+    <section class="cs-story-section bg-white">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">00</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Introduction</span>
+            <h2 class="cs-story-title">OVERVIEW</h2>
+          </div>
+        </div>
+        <p class="cs-story-paragraph">
+          Planify merupakan aplikasi mobile yang membantu mahasiswa mencatat, memantau, dan mengelola tugas secara lebih terstruktur di perangkat smartphone.
+        </p>
+      </div>
+    </section>
+
+    <!-- 01 — THE PROBLEM & 02 — THE SOLUTION -->
+    <section class="cs-story-section bg-canvas">
+      <div class="container">
+        <div class="cs-story-cards">
+          <!-- 01 — THE PROBLEM -->
+          <div class="cs-card-item">
+            <span class="cs-card-label">01 // Problem Identification</span>
+            <h3 class="cs-card-heading">THE PROBLEM</h3>
+            <p class="cs-card-text">
+              Mahasiswa sering memiliki beberapa tugas dengan deadline yang berbeda sehingga membutuhkan cara yang lebih terstruktur untuk mencatat dan memantau tugas.
+            </p>
+          </div>
+
+          <!-- 02 — THE SOLUTION -->
+          <div class="cs-card-item featured">
+            <span class="cs-card-label">02 // Digital Solution</span>
+            <h3 class="cs-card-heading">THE SOLUTION</h3>
+            <p class="cs-card-text">
+              Planify menyediakan dashboard yang menampilkan jumlah tugas, status tugas, pencarian tugas, serta aksi untuk mengedit, menghapus, dan menyelesaikan tugas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 — USER FLOW -->
+    <section class="cs-story-section bg-white">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">03</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Interaction Architecture</span>
+            <h2 class="cs-story-title">USER FLOW</h2>
+          </div>
+        </div>
+        <p class="cs-story-paragraph">
+          Alur langkah interaksi pengguna dari pertama kali membuka aplikasi hingga penyelesaian tugas:
+        </p>
+
+        <div class="cs-flow-box">
+          <ol class="cs-flow-chain">
+            <!-- 1 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">01</div>
+                <div class="cs-node-title">OPEN APP</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&darr;</span>
+            </li>
+            <!-- 2 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">02</div>
+                <div class="cs-node-title">DASHBOARD</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&darr;</span>
+            </li>
+            <!-- 3 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">03</div>
+                <div class="cs-node-title">VIEW TASKS</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&darr;</span>
+            </li>
+            <!-- 4 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">04</div>
+                <div class="cs-node-title">ADD TASK</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&darr;</span>
+            </li>
+            <!-- 5 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">05</div>
+                <div class="cs-node-title">INPUT TASK</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&darr;</span>
+            </li>
+            <!-- 6 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">06</div>
+                <div class="cs-node-title">SAVE</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&darr;</span>
+            </li>
+            <!-- 7 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node">
+                <div class="cs-node-num">07</div>
+                <div class="cs-node-title">TASK LIST</div>
+              </div>
+              <span class="cs-node-arrow" aria-hidden="true">&darr;</span>
+            </li>
+            <!-- 8 -->
+            <li class="cs-flow-link">
+              <div class="cs-flow-node" style="border-color: var(--c-accent); background: var(--c-accent-tint);">
+                <div class="cs-node-num" style="color: var(--c-accent);">08</div>
+                <div class="cs-node-title">COMPLETE / EDIT / DELETE</div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 — UI DESIGN (Real Screenshot Showcase) -->
+    <section class="cs-story-section bg-canvas">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">04</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Visual Presentation</span>
+            <h2 class="cs-story-title">UI DESIGN</h2>
+          </div>
+        </div>
+        <p class="cs-story-paragraph">
+          Tampilan antarmuka nyata Planify Mobile yang memperlihatkan header, indikator statistik, pencarian tugas, daftar kartu tugas, dan navigasi bawah.
+        </p>
+
+        <!-- Real Screenshot in Mobile Device Frame -->
+        <div class="cs-ui-stage">
+          <div class="cs-phone-frame-large">
+            <img src="assets/planify-mobile.png" 
+                 alt="Screenshot asli Planify Mobile Dashboard yang menampilkan Header, Total Tugas, Tugas Selesai, Tugas Proses, Pencarian, Daftar Tugas, tombol Edit dan Hapus, serta Bottom Navigation" 
+                 loading="lazy">
+          </div>
+          <div class="cs-caption-pill">
+            Planify Mobile Dashboard
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 — TECHNOLOGY -->
+    <section class="cs-story-section bg-white">
+      <div class="container">
+        <div class="cs-story-header">
+          <span class="cs-story-num">05</span>
+          <div>
+            <span class="section-label" style="margin-bottom: 0.25rem;"><span class="dash"></span>Implementation Stack</span>
+            <h2 class="cs-story-title">TECHNOLOGY</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid" style="margin-top: 2rem;">
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(30 12 12)"></ellipse>
+                <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(90 12 12)"></ellipse>
+                <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(150 12 12)"></ellipse>
+                <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">React Native</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Cross-platform Framework</small>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 22 22 22 12 2"></polygon>
+                <polygon points="12 9 6.5 20 17.5 20 12 9"></polygon>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">Expo</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Build &amp; Tooling</small>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">Expo Router</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Routing Architecture</small>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <path d="M8 16c0 1.5 1 2 2.5 2s2-.8 2-2v-4"></path>
+                <path d="M15 13.5c.8-.5 1.5-.5 2 0s.5 1.5 0 2-1.5 1.5-2 2.5"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">JavaScript</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Logic &amp; Handling</small>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-frame">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="skill-text">SQL</div>
+              <small style="color: var(--c-gray); font-size: 0.75rem;">Local Data Storage</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- 06 — RESULT -->
+        <div class="cs-result-banner">
+          <div class="cs-result-label">06 // RESULT</div>
+          <p class="cs-result-quote">
+            "Planify menghasilkan interface mobile yang memudahkan pengguna melihat dan mengelola tugas dalam satu aplikasi."
+          </p>
+        </div>
+
+        <!-- CTA Bar -->
+        <div class="cs-action-banner">
+          <div>
+            <h3 class="cs-action-title">GitHub Repository</h3>
+            <p class="cs-action-subtitle">Kode sumber lengkap aplikasi Planify Mobile tersedia di GitHub.</p>
+          </div>
+          <a href="https://github.com/231111069-prog/planify-mobile" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            VIEW GITHUB REPOSITORY
+            <svg class="arrow-diag" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cross Navigation: Next Project -->
+    <section class="cs-cross-nav">
+      <div class="container">
+        <a href="planify-web.html" class="cs-cross-card">
+          <div>
+            <div class="cs-cross-sub">Next Case Study // Project 02</div>
+            <h3 class="cs-cross-title">Planify Web</h3>
+            <p class="cs-cross-desc">Web-Based Task Management &amp; Analytics Dashboard dengan visualisasi grafik statistik tugas.</p>
+          </div>
+          <div class="cs-cross-arrow" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 Nur &mdash; UI/UX Portfolio</p>
+      <ul class="footer-nav">
+        <li><a href="index.html" class="footer-nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="footer-nav-link">All Projects</a></li>
+        <li>
+          <a href="https://github.com/231111069-prog/planify-mobile" target="_blank" rel="noopener noreferrer" class="footer-nav-link">
+            GitHub ↗
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
